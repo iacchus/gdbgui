@@ -1,11 +1,16 @@
 /* styling for all html tags */
 body {
-  background: #f5f6f7;
-  color: grey;
-  border-color: grey;
+  background: #ffffff;
+  color: #000000;
+  border-color: grey; 
   overflow: hidden;
   padding: 0px;
   height: 100%;
+}
+
+input{
+  border: 1px solid #ccc;
+  box-shadow: 0 !mportant;
 }
 
 pre {
@@ -42,7 +47,7 @@ td {
 }
 
 .monospace {
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-family: 'inconsolata', monospace;
 }
 
 .memadr, .memadr_react {
@@ -89,16 +94,8 @@ td {
 /* components get their own titlebars */
 .titlebar {
   width: 100%;
-  //
-  color: black;
   color: #fff;
   background-color: #669;
-  //
-  border-color: #669;
-  padding: 2px 3px;
-  border-width: 1px;
-  //
-  border-style: solid;
   padding: 2px 3px;
 }
 
@@ -122,6 +119,9 @@ td {
   background-color: white;
 }
 
+.collapser > div > div {
+  padding: 0 5px;
+}
 .sent_command {
   color: #00d8ff;
 }
@@ -227,9 +227,9 @@ td.assembly {
 }
 
 #code_table {
-  font-family: monospace;
+  font-family: 'inconsolata', monospace;
   border-collapse: separate;
-  font-size: 0.9em;
+  font-size: 14px;
 }
 
 .srccode td {
@@ -311,9 +311,9 @@ td.line_num {
 }
 
 #console {
-  background-color: #292929;
+  background-color: #000000;
   color: #d6d6d6 !important;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace !important;
+  font-family: 'inconsolata', monospace !important;
   width: 100%;
   overflow: auto;
   font-size: 0.9em;
@@ -326,6 +326,10 @@ td.line_num {
   bottom: 30px;
 }
 
+#filesystem {
+  padding: 0px 7px;
+}
+
 #filesystem ul, #filesystem li {
   listStyleType: none;
   padding: 0;
@@ -334,9 +338,10 @@ td.line_num {
 #gdb_command_input, #gdb_command_input .gdb_command_input {
   height: 30px;
   border-width: 0;
-  background-color: #3c3c3c !important;
-  color: #f9f9f9 !important;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace !important;
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  font-family: 'inconsolata',monospace !important;
+  font-weight: bold;
 }
 
 #gdb_command_input {
